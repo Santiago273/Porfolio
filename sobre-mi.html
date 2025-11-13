@@ -1,48 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseñador Freelancer</title>
+    <title>Sobre Mí - Vera Santiago | Desarrollador Full Stack</title>
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
-    
+    <style>
+        
+    </style>
 </head>
 <body>
     <header>
         <h1 class="titulo">Vera Santiago <samp>Freelancer</samp></h1>
     </header>
-    <div class="nav-bg">
-    <nav class="navegacion-principal contenedor">
-        <a href="./index.html">Inicio</a>
-        <a href="./sobre-mi.html">Sobre mi</a>
-        <a href="./proyectos.html">Proyectos</a>
-        <a href="./contacto.html">Contacto</a>    
-    </nav>
-    </div>
-  
-    <section class="hero">
-        <div class="contenido-seccion">
-            <h2>Diseño y desarrollo web <samp>Freelancer</samp></h2>
-                <div class="ubicacion">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="11" r="3" />
-                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                    </svg>
-                <p> Mendoza, Argentina</p>
-                </div>
-
-            <a class="boton" href="#">Contactar</a>
-        </div>
-    </section>
-<body>
     
+    <nav class="nav-bg">
+        <div class="contenedor" style="position: relative;">
+            <button class="nav-toggle" id="nav-toggle">
+                ☰
+            </button>
+            
+            <div class="navegacion-principal" id="navegacion-principal">
+                <a href="/index.html">Inicio</a>
+                <a href="/sobre-mi.html" class="activo">Sobre mi</a>
+                <a href="/proyectos.html">Proyectos</a>
+                <a href="/contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="sobre-mi contenedor sombra">
+        <!-- Sección de Perfil -->
+        <section class="perfil">
+            <div class="foto-container">
+                <img src="https://i.pinimg.com/736x/3d/4c/64/3d4c6462ad6f25e923f3f477531d6c1d.jpg" 
+                     alt="Vera Santiago - Desarrollador Full Stack" class="foto-perfil">
+            </div>
+            <div class="info-principal">
+                <h1>Hola, soy <span class="titulo-destacado">Vera Santiago</span></h1>
+                <p class="descripcion">
+                    Desarrollador Full Stack apasionado por crear soluciones digitales innovadoras. 
+                    Con más de 2 años de experiencia transformando ideas en aplicaciones web robustas 
+                    y escalables. Mi enfoque combina creatividad, código limpio y las mejores prácticas 
+                    de desarrollo.
+                </p>
+                <p class="descripcion">
+                    Me especializo en el desarrollo de aplicaciones web completas, desde el diseño 
+                    de interfaces atractivas hasta la implementación de arquitecturas backend eficientes. 
+                    Disfruto resolver problemas complejos y aprender nuevas tecnologías constantemente.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección de Habilidades Técnicas -->
+        <section class="habilidades">
+            <div class="categoria-habilidades">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 8l-4 4l4 4" />
+                        <path d="M17 8l4 4l-4 4" />
+                        <path d="M14 4l-4 16" />
+                    </svg>
+                    Frontend
+                </h3>
+                <ul class="lista-habilidades">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                        </svg>
+                        HTML5 & CSS3
+                        <span class="nivel-habilidad">Avanzado</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M7.5 8h3v8l-2 -1" />
+                            <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                        </svg>
+                        JavaScript ES6+
+                        <span class="nivel-habilidad">Avanzado</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-react" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" />
+                            <path d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" />
+                            <path d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" />
+                            <path d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" />
+                            <path d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" />
+                            <path d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" />
+                            <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" />
+                        </svg>
+                        React.js
+                        <span class="nivel-habilidad">Intermedio</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="categoria-habilidades">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="4" width="18" height="8" rx="3" />
+                        <rect x="3" y="12" width="18" height="8" rx="3" />
+                        <line x1="7" y1="8" x2="7" y2="8.01" />
+                        <line x1="7" y1="16" x2="7" y2="16.01" />
+                    </svg>
+                    Backend & Bases de Datos
+                </h3>
+                <ul class="lista-habilidades">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-nodejs" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 9v8.044a2 2 0 0 1 -2.996 1.734l-1.568 -.9a3 3 0 0 1 -1.436 -2.561v-6.635a3 3 0 0 1 1.436 -2.56l6 -3.667a3 3 0 0 1 3.128 0l6 3.667a3 3 0 0 1 1.436 2.561v6.634a3 3 0 0 1 -1.436 2.56l-6 3.667a3 3 0 0 1 -3.128 0" />
+                            <path d="M17 9h-3.5a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3h-3.5" />
+                        </svg>
+                        Node.js & Express
+                        <span class="nivel-habilidad">Avanzado</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-java" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M14 3l1.5 1.5l-1.5 1.5v3h3l1.5 -1.5l1.5 1.5h-3v3l1.5 1.5l-1.5 1.5h-3l-1.5 -1.5l-1.5 1.5h-3v-3l-1.5 -1.5l1.5 -1.5h3v-3l-1.5 -1.5l1.5 -1.5z" />
+                            <path d="M10 20h6" />
+                            <path d="M12 16v4" />
+                            <path d="M8 16h8" />
+                        </svg>
+                        Java
+                        <span class="nivel-habilidad">Intermedio</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
+                            <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                            <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                        </svg>
+                        SQL & Bases de Datos
+                        <span class="nivel-habilidad">Avanzado</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección de Experiencia -->
+        <section class="experiencia">
+            <h2>Mi Trayectoria</h2>
+            <div class="linea-tiempo">
+                <div class="evento-tiempo">
+                    <div class="fecha">2022 - Presente</div>
+                    <h3>Desarrollador Full Stack Freelance</h3>
+                    <p>Desarrollo de aplicaciones web completas para diversos clientes, implementando soluciones personalizadas con tecnologías modernas.</p>
+                </div>
+                <div class="evento-tiempo">
+                    <div class="fecha">2021 - 2022</div>
+                    <h3>Desarrollador Frontend Junior</h3>
+                    <p>Creación de interfaces de usuario responsivas y optimizadas, colaborando en equipos ágiles para entregar productos de alta calidad.</p>
+                </div>
+                <div class="evento-tiempo">
+                    <div class="fecha">2020 - 2021</div>
+                    <h3>Bootcamp de Desarrollo Web</h3>
+                    <p>Formación intensiva en tecnologías web modernas, adquiriendo habilidades full stack mediante proyectos prácticos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Destacados -->
+        <section class="proyectos-destacados">
+            <h2>Proyectos Destacados</h2>
+            <div class="grid-proyectos">
+                <div class="tarjeta-proyecto">
+                    <div class="contenido-proyecto">
+                        <h3>E-commerce Full Stack</h3>
+                        <p>Plataforma de comercio electrónico con carrito de compras, pasarela de pagos y panel administrativo.</p>
+                        <div class="tecnologias-proyecto">
+                            <span class="tecnologia">Java</span>
+                            <span class="tecnologia">Spring Boot</span>
+                            <span class="tecnologia">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-proyecto">
+                    <div class="contenido-proyecto">
+                        <h3>Sistema de Gestión</h3>
+                        <p>Aplicación de escritorio completa para administración de inventario de repuestos, 
+                            gestión de clientes, control de citas y seguimiento de reparaciones. Incluye 
+                            generación de reportes financieros y control de stock en tiempo real.</p>
+                        <div class="tecnologias-proyecto">
+                            <span class="tecnologia">React</span>
+                            <span class="tecnologia">Electron</span>
+                            <span class="tecnologia">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-proyecto">
+                    <div class="contenido-proyecto">
+                        <h3>API REST</h3>
+                        <p>Desarrollo de API robusta para aplicación móvil, con autenticación JWT y documentación Swagger.</p>
+                        <div class="tecnologias-proyecto">
+                            <span class="tecnologia">Express.js</span>
+                            <span class="tecnologia">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Llamada a la acción -->
+        <section class="cta-final">
+            <h2>¿Tienes un proyecto en mente?</h2>
+            <p>Estoy listo para ayudarte a hacerlo realidad. Trabajemos juntos para crear algo extraordinario.</p>
+            <a href="contacto.html" class="boton-cta">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8 9h8" />
+                    <path d="M8 13h6" />
+                    <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                </svg>
+                Hablemos de tu proyecto
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Todos los derechos reservados. Santiago Vera Freelancer</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
