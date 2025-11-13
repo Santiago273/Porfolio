@@ -1,34 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // === 1. MENÚ RESPONSIVO (Toggle Menu) ===
+    
     const navToggle = document.getElementById('nav-toggle');
     const navPrincipal = document.getElementById('navegacion-principal');
 
     if (navToggle && navPrincipal) {
-        // Manejar la apertura/cierre del menú al hacer clic en el ícono
+        
         navToggle.addEventListener('click', (e) => {
             e.preventDefault();
             navPrincipal.classList.toggle('activo');
             
-            // Cambiar ícono (opcional)
+            
             if (navPrincipal.classList.contains('activo')) {
-                navToggle.innerHTML = '✕'; // Icono de cerrar
+                navToggle.innerHTML = '✕'; 
             } else {
-                navToggle.innerHTML = '☰'; // Icono hamburguesa
+                navToggle.innerHTML = '☰'; 
             }
         });
 
-        // Cerrar el menú si se hace clic en cualquier enlace (en móvil)
+        
         const enlaces = navPrincipal.querySelectorAll('a');
         enlaces.forEach(enlace => {
             enlace.addEventListener('click', () => {
-                if (window.innerWidth <= 768) { // Solo en móvil
+                if (window.innerWidth <= 768) { 
                     navPrincipal.classList.remove('activo');
-                    navToggle.innerHTML = '☰'; // Volver al ícono hamburguesa
+                    navToggle.innerHTML = '☰'; 
                 }
             });
         });
 
-        // Cerrar menú al redimensionar la ventana (si se cambia de móvil a PC)
+        
         window.addEventListener('resize', () => {
             if (window.innerWidth > 768) {
                 navPrincipal.classList.remove('activo');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // === 2. SCROLL SUAVE ===
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             if (this.hash && this.hash !== '#') {
